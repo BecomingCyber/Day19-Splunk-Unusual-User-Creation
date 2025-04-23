@@ -44,7 +44,7 @@ All logs were imported into Splunk as a lookup table using:
 | stats dc(uid) as user_creation_count
 ```
 ### 📸 Screenshot:
-images/q1_user_created.png
+![Q1 User Creation Count](images/q1_user_created.png)
 
 Displays a single field:
 ```nginx
@@ -60,7 +60,8 @@ Answer: UID 1015 accessed /etc/shadow using the nano editor, indicating they mod
 | table _time uid process path
 ```
 📸 Screenshot:  
-✅ Screenshot `images/q2_password_change.png` showing:
+![Q2 Password Change](images/q2_password_change.png)
+showing:
 
 | _time                     | uid  | process | path         |
 |---------------------------|------|---------|--------------|
@@ -73,7 +74,7 @@ Answer: UID 1015 accessed /etc/shadow using the nano editor, indicating they mod
 This inference is made from the fact that UID `1015` accessed `/etc/shadow` using `nano`, indicating a likely password change operation.
 
 ## 📸 Screenshot:  
-✅ `images/q3_uid_david.png`
+![Q3 UID David](images/q3_uid_david.png)
 
 ---
 
